@@ -1,17 +1,19 @@
 # Demo for January and February 2020 
 
-1. Download final2020.dump from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=sharing and add it into Neo4J Desktop 
+1. Download final2020.dump from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=sharing and add it into Neo4J Desktop. 
 
-2. Navigate into diffbot_final_app for English queries or diffbot_final_app_German for German queries 
+2. Navigate into diffbot_final_app for English queries or diffbot_final_app_German for German queries. 
 
-3. Add your OpenAI API key and your local Neo4J database credentials into the .env file. 
+3. Add your OpenAI API key and your local Neo4J database credentials into the .env file. You can get the URI by opening the Neo4J browser from the desktop app. If you did not make any changes, the database name is final2020 and the username and password are both neo4j. 
 
-4. Ensure that the packages in requirements.txt are installed. 
+4. Ensure that poetry and the packages in requirements.txt are installed. 
 
-5. Make sure your local Neo4J database is running and start the interface with 
+5. Follow the instructions of the README in the folder. 
+
+6. Make sure your local Neo4J database is running and start the interface with 
    poetry run langchain serve --port=8100
 
-6. Open http://127.0.0.1:8100/diffbotdemo/playground/ in your browser and enter your query. 
+7. Open http://127.0.0.1:8100/diffbotdemo/playground/ in your browser and enter your query (change diffbotdemo to whatever you named the project). 
 
 
 ____ 
