@@ -1,6 +1,6 @@
 # Demo for January and February 2020 
 
-1. Download final2020 from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=sharing and add it into Neo4J Desktop 
+1. Download final2020.dump from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=sharing and add it into Neo4J Desktop 
 
 2. Navigate into diffbot_final_app for English queries or diffbot_final_app_German for German queries 
 
@@ -18,4 +18,12 @@ ____
 
 # Generating your own graph database 
 
-1. 
+1. You can use data from the xlsx-new folder in https://drive.google.com/drive/folders/1Np2HaZ7dxiaIfzpZAIdhsA9pntdVURYI or a subset of data generated with the sentiment analysis tool. Load into a pandas dataframe and filter to the desired timeframe/other subset. 
+
+2. Generate English translations (DiffbotGraphTransformer will not extract relationships from Chinese text, only entities) and add them into a new column "translations" 
+
+3. Follow the steps in diffbot_indexing.ipynb to generate a database. You will need a Diffbot API key. 
+
+4. Replace the credentials in the .env file in the app with your own. 
+
+
