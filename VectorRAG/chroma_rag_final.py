@@ -89,6 +89,9 @@ def main():
     parser.add_argument("--language", type=str, default="English", help="Specify the query language (default: English)")
     args = parser.parse_args()
 
+
+    load_dotenv()
+    
     if args.zh_vectors and args.en_vectors:
         raise ValueError("Please specify only one of --zh_vectors or --en_vectors.")
     elif not args.zh_vectors and not args.en_vectors:
