@@ -1,1 +1,17 @@
-test
+Demo for GraphRAG January-February 2020 
+
+NOTE: GRAPHRAG CAN INCUR HIGH COST FOR API CALLS! 
+
+1. Download graphrag_chinese or graphrag-english from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=sharing 
+
+2. Add your OpenAI API key into the .env file. 
+
+3. Query with 
+   graphrag.query \                                      
+--root ./graphrag-english \
+--method global \
+"What are the main themes in the data?"
+
+(Change parameters as needed) 
+
+4. If you would like to try other configurations or perform indexing for your own subset of data, follow the official guide: https://microsoft.github.io/graphrag/ 
