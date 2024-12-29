@@ -4,8 +4,8 @@ import os
 import dotenv
 
 # Force the use of pysqlite3 instead of the standard sqlite3
-importlib.import_module('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+#importlib.import_module('pysqlite3')
+#sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Now, import other modules
 import sqlite3
