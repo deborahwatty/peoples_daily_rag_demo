@@ -1,1 +1,21 @@
-test
+# Demo: January and February of 2020 
+
+1. Add your OpenAI API key to the .env file
+
+2. Download chroma_english and/or chroma_chinese from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=share_link 
+
+3. Run the demo with 
+   python3 chroma_rag2.py --en_vectors --language English
+
+(change to zh_vectors for Chinese datastore and German for German query)
+
+____ 
+
+# Custom timeframe 
+If you would like to use VectorRAG on a different time frame or a set of articles generated with the sentiment analysis tool, you can use chroma_embed.py to create a new datastore. 
+
+1. Convert your data to .tsv and ensure it has a merged_content column containing both the title and text. 
+
+2. Change the file path in chroma_embed.tsv and run the script. 
+
+3. Change the datastore file path in chroma_rag_final.py. 
