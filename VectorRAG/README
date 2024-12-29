@@ -5,9 +5,12 @@
 2. Download chroma_english and/or chroma_chinese from https://drive.google.com/drive/folders/1O3VgOmraE3NgNhtHtKeSbXbzikxNX2aI?usp=share_link 
 
 3. Run the demo with 
-   python3 chroma_rag2.py --en_vectors --language English
+   python3 chroma_rag_final.py --en_vectors --language English
 
-(change to zh_vectors for Chinese datastore and German for German query)
+   (change to zh_vectors for Chinese datastore and German for German query)
+
+4. Should you encouter issues with sqlite3, comment in lines 7 and 8 on chroma_rag_final.py. 
+
 
 ____ 
 
