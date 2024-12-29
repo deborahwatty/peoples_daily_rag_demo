@@ -6,10 +6,12 @@
 
 3. Add your OpenAI API key and your local Neo4J database credentials into the .env file. 
 
-4. Make sure your local Neo4J database is running and start the interface with 
+4. Ensure that the packages in requirements.txt are installed. 
+
+5. Make sure your local Neo4J database is running and start the interface with 
    poetry run langchain serve --port=8100
 
-5. Open http://127.0.0.1:8100/diffbotdemo/playground/ in your browser and enter your query. 
+6. Open http://127.0.0.1:8100/diffbotdemo/playground/ in your browser and enter your query. 
 
 
 ____ 
